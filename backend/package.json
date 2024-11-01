@@ -1,0 +1,37 @@
+{
+  "name": "webrtc-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "nodemon dist/index.js",
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.4",
+    "@types/winston": "^2.4.4",
+    "concurrently": "^9.0.1",
+    "tslint": "^5.20.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.0.2",
+    "winston": "^3.15.0"
+  }
+}
